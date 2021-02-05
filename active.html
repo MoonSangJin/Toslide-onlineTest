@@ -26,38 +26,56 @@
   </head>
 
   <body>
-    <div>
-      header
-      <div>프로그램별,프로세스별,학생별</div>
+    <div class="grayBorder d-flex justify-content-center">
+      <div class="sortClass">
+        <div class="sortTitle">프로그램별</div>
+        <div class="verticalBar"></div>
+        <div class="sortTitle">학생별</div>
+      </div>
     </div>
-    <div>
-      <div>자료구조1-2</div>
-      <div>많이 실행되는 순</div>
-      <div>새로고침</div>
-      <div>초기화</div>
+    <div class="grayBorder d-flex">
+      <div class="selectBox">
+        <select class="inputBox">
+          <option selected="selected">과목 순</option>
+          <option>자료구조1</option>
+          <option>자료구조2</option>
+          <option>자료구조3</option>
+        </select>
+        <select class="inputBox">
+          <option selected="selected">많이 실행되는 순</option>
+          <option>자료구조1</option>
+          <option>자료구조2</option>
+          <option>자료구조3</option>
+        </select>
+      </div>
+
+      <div class="buttonBox">
+        <div class="whiteButton">
+          <img class="imgSize" src="./asset//img-2021/refresh.png" />
+          <div>새로고침</div>
+        </div>
+        <div class="whiteButton">
+          <img class="imgSize" src="./asset//img-2021/X_or_Close_Black.png" />
+          <div>초기화</div>
+        </div>
+      </div>
     </div>
     <table id="key_table" style="width: 100%">
-      <tr id="keywordTable" class="d-flex flex-wrap align-items-center">
+      <tr class="tableGrayBorder">
         <td>
-          <div>Rendering</div>
-          <img src="asset/img-2021/close_ligh_blue.png" />
+          <div>실행 개수</div>
         </td>
 
         <td>
-          <div>Example</div>
-          <img src="asset/img-2021/close_ligh_blue.png" />
+          <div>프로그램</div>
         </td>
-
+      </tr>
+      <tr class="tableGrayBorder">
         <td>
-          <div>Design</div>
-          <img src="asset/img-2021/close_ligh_blue.png" />
+          <div>3</div>
         </td>
-
-        <td class="initialKeyword">
-          <img class="keywordPlus" src="asset/img-2021/plus_button.png" />
-          <form class="keywordInputForm">
-            <input class="keywordInput hidden" type="text" />
-          </form>
+        <td>
+          <div>Calculator.exe</div>
         </td>
       </tr>
     </table>
