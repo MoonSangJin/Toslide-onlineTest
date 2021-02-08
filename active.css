@@ -3,6 +3,15 @@ body,
 table {
   max-width: 575px;
 }
+.hidden {
+  display: none;
+}
+#dropdownImage,
+#clicked,
+.whiteButton,
+.sortTitle {
+  cursor: pointer;
+}
 .grayBorder {
   border: 1px solid #dadce0;
   background: #f4f5f6 0% 0% no-repeat padding-box;
