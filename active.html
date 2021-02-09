@@ -27,18 +27,20 @@
 
   <body>
     <div class="grayBorder d-flex justify-content-center">
-      <div class="sortClass">
-        <div class="sortTitle">프로그램별</div>
-        <div class="verticalBar"></div>
-        <div class="sortTitle">학생별</div>
+      <div class="sortClass1">
+        <div class="sortTitle perProgram">프로그램별</div>
+      </div>
+
+      <div class="sortClass2">
+        <div class="sortTitle perStudent">학생별</div>
       </div>
     </div>
-    <div class="grayBorder d-flex justify-content-around">
+    <div class="grayBorder d-flex align-items-center">
       <select class="inputBox1">
-        <option selected="selected">과목 순</option>
-        <option>자료구조1</option>
-        <option>자료구조2</option>
-        <option>자료구조3</option>
+        <option selected="selected">시험명</option>
+        <option>자료구조1_0209</option>
+        <option>자료구조2_0210</option>
+        <option>자료구조3)0211</option>
       </select>
       <select class="inputBox2">
         <option selected="selected">많이 실행되는 순</option>
@@ -47,32 +49,30 @@
         <option>자료구조3</option>
       </select>
 
-      <div class="d-flex">
-        <div class="whiteButton">
-          <img class="imgSize" src="./asset//img-2021/refresh.png" />
-          <div>새로고침</div>
-        </div>
-        <div class="whiteButton">
-          <img class="imgSize" src="./asset//img-2021/X_or_Close_Black.png" />
-          <div>초기화</div>
-        </div>
+      <div class="whiteButton" style="margin-left: 15px">
+        <img class="imgSize" src="./asset//img-2021/refresh.png" />
+        <div>새로고침</div>
+      </div>
+      <div class="whiteButton">
+        <img class="imgSize" src="./asset//img-2021/X_or_Close_Black.png" />
+        <div>초기화</div>
       </div>
     </div>
     <table id="perProgramTable" style="width: 100%">
       <tr align="center" class="tableItemRow">
         <td>
-          <div class="executionNumber">실행 개수</div>
+          <div class="tableTitle">실행 개수</div>
         </td>
         <td colspan="3">
-          <div class="program">프로그램</div>
+          <div class="tableTitle">프로그램</div>
         </td>
       </tr>
       <tr class="tableItemRow">
         <td align="center">
-          <div class="tableItemNumber">3</div>
+          <div class="tableItemNumber">1</div>
         </td>
-        <td colspan="2" class="tableItemProgram">
-          <div>Calculator.exe</div>
+        <td colspan="2">
+          <div class="tableItemProgram">Calculator.exe</div>
         </td>
         <td align="right">
           <img
@@ -86,8 +86,8 @@
         <td align="center">
           <div class="tableItemNumber">3</div>
         </td>
-        <td colspan="2" class="tableItemProgram">
-          <div>Kakaotalk.exe</div>
+        <td colspan="2">
+          <div class="tableItemProgram">Kakaotalk.exe</div>
         </td>
         <td align="right">
           <img
@@ -111,6 +111,25 @@
         <td class="name">B611061 문상진</td>
         <td class="programName">Kakaotalk.exe</td>
       </tr> -->
+    </table>
+
+    <table id="perStudentTable" class="hidden" style="width: 100%">
+      <tr align="center" class="tableItemRow">
+        <td>
+          <div class="tableTitle">사용시간</div>
+        </td>
+        <td>
+          <div class="tableTitle">프로그램</div>
+        </td>
+      </tr>
+      <tr class="tableItemRow">
+        <td align="center">
+          <div class="usageTime">00:00:00</div>
+        </td>
+        <td>
+          <div class="tableItemProgram">Kakaotalk.exe : 카카오톡</div>
+        </td>
+      </tr>
     </table>
 
     <!-- Optional JavaScript -->

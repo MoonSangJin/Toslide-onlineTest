@@ -16,38 +16,56 @@ table {
   border: 1px solid #dadce0;
   background: #f4f5f6 0% 0% no-repeat padding-box;
 }
-.sortClass {
+.sortClass1,
+.sortClass2 {
   display: flex;
-  background: #f4f5f6 0% 0% no-repeat padding-box;
   border: 1px solid #dadce0;
-  border-radius: 8px;
-  margin: 8px;
+  border-radius: 8px 0px 0px 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  background: #f4f5f6 0% 0% no-repeat padding-box;
+  color: #7c7d80;
 }
-.verticalBar {
-  border-left: 1px solid #dadce0;
+.sortClass1 {
+  border-radius: 8px 0px 0px 8px;
+  border-right: none;
 }
+.sortClass2 {
+  border-radius: 0px 8px 8px 0px;
+  border-left: none;
+}
+
 .sortTitle {
   width: 127px;
   text-align: center;
+  font: normal normal bold 12px/14px Roboto;
+  letter-spacing: 0px;
+}
+.sortTitle.perProgram {
+  border-right: 1px solid #dadce0;
 }
 .imgSize {
   width: 26px;
   height: 26px;
 }
 .whiteButton {
+  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 8px #00000019;
   border-radius: 5px;
-  margin: 8px;
+  margin-left: 8px;
   font: normal normal bold 12px/14px Roboto;
   padding-left: 5px;
   padding-right: 6px;
 }
 .inputBox1,
 .inputBox2 {
+  height: 26px;
   border: 1px solid #dadce0;
   border-radius: 5px;
   margin: 8px;
@@ -62,9 +80,42 @@ table {
 .tableContainer {
   width: 500px;
 }
+.tableTitle {
+  font: normal normal bold 12px/14px Roboto;
+  letter-spacing: 0px;
+  margin-top: 5px;
+  margin-bottom: 4px;
+  border-right: 1px solid #dadce0;
+  text-align: center;
+}
 .tableItemRow {
   border: 1px solid #dadce0;
+  height: 39px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+.dropdownTitle {
+  background: #fafafb 0% 0% no-repeat padding-box;
+  border: 1px solid #dadce0;
+  height: 24px;
+  padding-top: 5px;
+  padding-bottom: 4px;
 }
 .dropdownMenu {
   border: 1px solid #dadce0;
+  height: 39px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+.tableItemNumber,
+.usageTime,
+.name,
+.programName {
+  font: normal normal bold 12px/14px Roboto;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.tableItemProgram {
+  font: normal normal bold 12px/20px Roboto;
+  letter-spacing: 0px;
 }
