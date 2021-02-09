@@ -43,7 +43,7 @@ const openDropdownMenu = (e) => {
     tr.after(newActiveObject1);
     newActiveObject1.after(newActiveObject2);
     // newActiveObject2.after(newActiveObject3);
-    e.target.setAttribute('src', './asset//img-2021/X_or_Close_Black.png');
+    e.target.setAttribute('src', './asset//img-2021/X_or_Close_black.png');
     e.target.setAttribute('id', 'clicked');
   } else {
     let dropdownTitle = document.querySelectorAll('.dropdownTitle');
